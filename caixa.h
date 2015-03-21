@@ -3,31 +3,14 @@
 
 class Caixa{
 private:
-	int status;
+	bool aberto;
+	bool atendendo;
 public:
-	Open();
-	Close();
+	Caixa();
+	~Caixa();
+	bool atender();
+	bool fechar();
+	bool abrir();
+	bool verificar();
 };
-
-Caixa::verificar(int status){
-	if (status == 1){
-		return Open();
-	}
-	elseif (status == 0){
-		return Close();
-	}
-}
-
-Caixa::Open(int attend){
-	return attend;
-
-}
-
-Caixa::Close(int next){
-	return next;
-}
-
-Caixa::Atendimento(){
-	
-}
 #endif
